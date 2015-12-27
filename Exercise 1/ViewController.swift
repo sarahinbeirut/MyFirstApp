@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var BlueBomb: UIImageView!
+    @IBOutlet weak var RedBomb: UIImageView!
+    @IBOutlet weak var CoolButton: UIButton!
+    @IBOutlet weak var CoolButton2: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +23,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func MakeMeDisappear(sender: AnyObject) {
+        RedBomb.hidden = true
+    }
 
+    @IBAction func MakeMeDisappear2(sender: AnyObject) {
+        BlueBomb.hidden = true
+    }
 
 }
 
